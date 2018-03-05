@@ -4,14 +4,14 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name='JPMorgan_test',
+    name='message_process',
     version='0.1',
     description='Load messages from a txt file and process sales notification messages.',
     author='Sergios Lenis',
     author_email='sergioslenis@gmail.com',
     license='MIT',
-    packages=['JPMorgan_test'],
+    packages=['message_process'],
     include_package_data=True,
-    scripts=['bin/JPMorgan_test'],
+    scripts=['bin/message_process'],
     install_requires=[ 'message_process' ],
         )
