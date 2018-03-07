@@ -1,0 +1,51 @@
+1 Sale of apple with price 10 
+20 Sales of apple with price 10 
+Operation add for product apple final price 30 
+1 Sale of apple with price 10 
+20 Sales of apple with price 10 
+Operation add for product apple final price 50 
+1 Sale of apple with price 10 
+20 Sales of banana with price 10 
+1 Sale of banana with price 10 
+20 Sales of cherry with price 10 
+1 Sale of cherry with price 10 
+20 Sales of orange with price 10 
+1 Sale of orange with price 10 
+20 Sales of pineapple with price 10 
+1 Sale of pineapple with price 10 
+5 Sales of strawberry with price 5 
+1 Sale of strawberry with price 5 
+1 Sale of grape with price 23 
+2 Sales of grape with price 15 
+1 Sale of grape with price 15 
+1 Sale of watermelon with price 20 
+25 Sales of watermelon with price 20 
+1 Sale of apple with price 10 
+Operation add for product pineapple final price 12 
+Operation add for product banana final price 13 
+Operation subtract for product apple final price 45 
+1 Sale of apple with price 10 
+20 Sales of apple with price 10 
+Operation add for product apple final price 65 
+1 Sale of apple with price 10 
+20 Sales of apple with price 10 
+Operation add for product apple final price 85 
+1 Sale of apple with price 10 
+20 Sales of banana with price 10 
+1 Sale of banana with price 10 
+20 Sales of cherry with price 10 
+1 Sale of cherry with price 10 
+20 Sales of orange with price 10 
+1 Sale of orange with price 10 
+20 Sales of pineapple with price 10 
+1 Sale of pineapple with price 10 
+5 Sales of strawberry with price 5 
+1 Sale of apple with price 10 
+20 Sales of apple with price 10 
+Operation multiply for product strawberry final price 100 
+1 Sale of apple with price 10 
+20 Sales of banana with price 10 
+1 Sale of banana with price 10 
+1 Sale of celery with price 20 
+Operation add for product celery final price 40 
+10 Sales of celery with price 30 

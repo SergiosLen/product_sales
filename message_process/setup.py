@@ -12,6 +12,8 @@ setup(
     license='MIT',
     packages=['message_process'],
     include_package_data=True,
-    scripts=['bin/message_process'],
+    test_suite='nose.collector',
+    tests_require=['nose'],
+    # scripts=['bin/message_process'],
     install_requires=[ 'message_process' ],
         )
