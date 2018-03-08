@@ -55,6 +55,11 @@ class Operation:
     def get_report(self):
         return 'Operation %s for product %s final price %i ' %(self.operator,self.product.name, self.product.price)
 
+class MessageFormatError:
+
+    def get_report(self):
+        return 'Message out of format.!'
+
 class Messages:
     """ """
     def __init__(self):
@@ -63,7 +68,6 @@ class Messages:
         self.messages=[]
         self.sales={}
         self.adjustments={}
-
 
     def parse_message(self,message):
 
@@ -75,7 +79,7 @@ class Messages:
             operation=Operation(message[0],int(message[1].replace('p','')),product)
             self.adjustments[product_name].append(operation)
             # self.sales[product_name]+=1
-            return operation.get_report()
+            return operation
 
         elif message[0].isdigit():
 
@@ -87,7 +91,7 @@ class Messages:
             product=self.products[product_name]
             self.sales[product_name]['sale']+=int(message[0])
             self.sales[product_name]['value']+=int(message[0])*product.price
-            return Sale(product,message[5],number_of_sales=int(message[0])).get_report()
+            return Sale(product,message[5],number_of_sales=int(message[0]))
         elif len(message) == 3 :
             product_name=message[0]#singular.plural(message[0],2)
             if not product_name in self.products:
@@ -99,9 +103,9 @@ class Messages:
             self.sales[product_name]['value']+=product.price
             product=self.products[product_name]
             # self.sales[product_name]+=1
-            return Sale(product,message[2]).get_report()
+            return Sale(product,message[2])
         else:
-            return 'Message out of format.!'
+            return MessageFormatError()
 
         self.messages.append(message)
 

@@ -11,7 +11,7 @@ def start_testing():
     fops=open('message_process/tests/messages.txt')
     fop=open(os.path.join('message_process','log','log.txt'),'w')
     for message_string in fops:
-        fop.write(messages.parse_message(message_string.strip().lower().split(' ')) + "\n")#.get_report()
+        fop.write(messages.parse_message(message_string.strip().lower().split(' ')).get_report()+ "\n")
         # messages.parse_message(message_string.strip().lower().split(' '))
         # print(message_string)
         number_of_messages+=1
@@ -36,7 +36,7 @@ def start_recording():
     fop=open(os.path.join('message_process','log','log.txt'),'w')
     while number_of_messages< 50:
         message_string = input()
-        fop.write(messages.parse_message(message_string.strip().lower().split(' ')) + "\n")#.get_report()
+        fop.write(messages.parse_message(message_string.strip().lower().split(' ')).get_report()+ "\n")
         number_of_messages+=1
         if number_of_messages==log_number:
             print('============')
