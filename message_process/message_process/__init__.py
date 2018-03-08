@@ -35,6 +35,7 @@ def start_recording():
     messages=Messages()
     fop=open(os.path.join('message_process','log','log.txt'),'w')
     while number_of_messages< 50:
+        message_string = input()
         fop.write(messages.parse_message(message_string.strip().lower().split(' ')) + "\n")#.get_report()
         number_of_messages+=1
         if number_of_messages==log_number:

@@ -14,6 +14,6 @@ setup(
     include_package_data=True,
     test_suite='nose.collector',
     tests_require=['nose'],
-    # scripts=['bin/message_process'],
+    scripts=['bin/message_process'],
     install_requires=[ 'message_process' ],
         )

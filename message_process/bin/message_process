@@ -1,0 +1,7 @@
+#! /usr/bin/env python
+
+import message_process as mp
+mp.start_recording()
+
+
+
